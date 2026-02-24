@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morning SOP</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+  }
+  .phase {
+    background: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .phase-header {
+    background: #34495e;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .phase-header:hover {
+    background: #2c3e50;
+  }
+  .time {
+    font-size: 0.85em;
+    color: #bdc3c7;
+    font-weight: normal;
+  }
+  .phase-content {
+    padding: 15px 20px;
+    display: none;
+    border-top: 1px solid #eee;
+  }
+  .phase-content.active {
+    display: block;
+  }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Tuesday Morning Routine</h1>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 1: Kitchen Reset & Packing
+      <span class="time">6:30 AM - 7:00 AM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Logistics:</strong> Bag pre-made lunch and stage it with work gear.</li>
+        <li><strong>Dishwasher & Sink:</strong> Empty clean dishes, scrape and load breakfast plates, rinse sink.</li>
+        <li><strong>Surface Clear:</strong> Wipe down counters and stow open cereal boxes or ingredients.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 2: Personal Hygiene
+      <span class="time">7:00 AM - 7:30 AM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Prep:</strong> Shower, shave, and get dressed for the office.</li>
+        <li><strong>Tidy:</strong> Execute a final room check to ensure the bathroom is orderly.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 3: The Launch
+      <span class="time">7:30 AM - 7:45 AM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Gear Check:</strong> Confirm all bags, laptops, lunches, agendas, phone, wallet, and house keys are at the door. Verify kids' gear.</li>
+        <li><strong>Safety Check:</strong> Verify stove is off and coffee maker is unplugged/off.</li>
+        <li><strong>Security:</strong> Ensure back door is locked. Suit up for the weather and lock the front door.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 4: Commute
+      <span class="time">7:45 AM - 8:15 AM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Walk to Office:</strong> Maintain focus on the commute.</li>
+        <li><strong>Mental Prep:</strong> Execute a quick mental review of the workday ahead and monitor local weather conditions.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 5: Office Transition
+      <span class="time">8:15 AM - 8:30 AM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Sustainment:</strong> Make coffee at the station for the first deep-work block.</li>
+        <li><strong>Reset:</strong> Restroom break before locking in.</li>
+        <li><strong>Workspace:</strong> Power up station and clear physical clutter from the desk.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function togglePhase(element) {
+      const content = element.nextElementSibling;
+      content.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
