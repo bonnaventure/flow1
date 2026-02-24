@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday Evening SOP</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+  }
+  .phase {
+    background: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  .phase-header {
+    background: #34495e;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .phase-header:hover {
+    background: #2c3e50;
+  }
+  .time {
+    font-size: 0.85em;
+    color: #bdc3c7;
+    font-weight: normal;
+  }
+  .phase-content {
+    padding: 15px 20px;
+    display: none;
+    border-top: 1px solid #eee;
+  }
+  .phase-content.active {
+    display: block;
+  }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Monday Evening Routine</h1>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 1: Arrival & Initiation
+      <span class="time">4:30 PM - 5:00 PM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Entry Drill:</strong> Mandate all coats hung and boots lined up immediately at the front door.</li>
+        <li><strong>Admin:</strong> Review and sign both agendas.</li>
+        <li><strong>Dinner Prep:</strong> Begin cooking the main meal (start stovetop carbs and oven proteins).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 2: Task Pairing & Dinner
+      <span class="time">5:00 PM - 6:00 PM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Chores & Media:</strong> Kids fold laundry on the couch while watching their designated TV show.</li>
+        <li><strong>Dinner Service:</strong> Eat together at the kitchen table.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 3: The Pivot & Academics
+      <span class="time">6:00 PM - 7:00 PM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Immediate Reset:</strong> Clear the kitchen table, wipe counters, and load the dishwasher.</li>
+        <li><strong>Laundry Completion:</strong> Kids put folded laundry away in their respective rooms.</li>
+        <li><strong>Homework:</strong> Execute spelling practice or assigned homework at the clean kitchen table.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 4: Hygiene & Bedtime
+      <span class="time">7:00 PM - 7:30 PM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Hygiene:</strong> Shower/bath (if scheduled), PJs, and teeth brushing.</li>
+        <li><strong>Bag Check:</strong> Place completed homework and signed agendas in backpacks. Stage backpacks by the door.</li>
+        <li><strong>Lights Out:</strong> Target 7:30 PM for both kids.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header" onclick="togglePhase(this)">
+      Phase 5: Final Sweep
+      <span class="time">7:30 PM - 9:00 PM</span>
+    </div>
+    <div class="phase-content">
+      <ul>
+        <li><strong>Kitchen Close:</strong> Final wipe down of the stove and sink. Start dishwasher if full.</li>
+        <li><strong>Entryway Check:</strong> Verify boots and coats are orderly.</li>
+        <li><strong>Downtime:</strong> Relax.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function togglePhase(element) {
+      const content = element.nextElementSibling;
+      content.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
