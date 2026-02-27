@@ -1,0 +1,127 @@
+{
+  "household_operations": [
+    {
+      "day_of_week": "Monday",
+      "phases": [
+        {
+          "phase_id": 1,
+          "phase_name": "Arrival & Initiation",
+          "start_time": "4:30 PM",
+          "end_time": "5:00 PM",
+          "tasks": [
+            {
+              "task_name": "Entry Drill (Coats and boots)",
+              "assignee": "Family",
+              "is_completed": false
+            },
+            {
+              "task_name": "Sign Agendas",
+              "assignee": "Parent",
+              "is_completed": false
+            },
+            {
+              "task_name": "Start Dinner Prep",
+              "assignee": "Parent",
+              "is_completed": false
+            }
+          ]
+        },
+        {
+          "phase_id": 2,
+          "phase_name": "Task Pairing & Dinner",
+          "start_time": "5:00 PM",
+          "end_time": "6:00 PM",
+          "tasks": [
+            {
+              "task_name": "Fold Laundry & Watch TV",
+              "assignee": "Kids",
+              "is_completed": false
+            },
+            {
+              "task_name": "Eat Dinner at Table",
+              "assignee": "Family",
+              "is_completed": false
+            }
+          ]
+        },
+        {
+          "phase_id": 3,
+          "phase_name": "The Pivot & Academics",
+          "start_time": "6:00 PM",
+          "end_time": "7:00 PM",
+          "tasks": [
+            {
+              "task_name": "Kitchen Reset",
+              "assignee": "Parent",
+              "is_completed": false
+            },
+            {
+              "task_name": "Put Laundry Away",
+              "assignee": "Kids",
+              "is_completed": false
+            },
+            {
+              "task_name": "Spelling/Homework",
+              "assignee": "Kids",
+              "is_completed": false
+            }
+          ]
+        },
+        {
+          "phase_id": 4,
+          "phase_name": "Hygiene & Bedtime",
+          "start_time": "7:00 PM",
+          "end_time": "7:30 PM",
+          "tasks": [
+            {
+              "task_name": "Shower/PJs/Teeth",
+              "assignee": "Kids",
+              "is_completed": false
+            },
+            {
+              "task_name": "Pack Bags & Stage",
+              "assignee": "Family",
+              "is_completed": false
+            },
+            {
+              "task_name": "Lights Out",
+              "assignee": "Kids",
+              "is_completed": false
+            }
+          ]
+        },
+        {
+          "phase_id": 5,
+          "phase_name": "Final Sweep",
+          "start_time": "7:30 PM",
+          "end_time": "9:00 PM",
+          "tasks": [
+            {
+              "task_name": "Final Kitchen Close",
+              "assignee": "Parent",
+              "is_completed": false
+            },
+            {
+              "task_name": "Entryway Check",
+              "assignee": "Parent",
+              "is_completed": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "personal_habits": {
+    "framework": "Cue_Routine_Reward",
+    "physical_health": {
+      "weekly_targets": {
+        "walking_distance_km": 25,
+        "weightlifting_sessions": 3
+      },
+      "nutrition": {
+        "primary_goal": "moderate_weight_loss",
+        "macro_focus": "high_protein"
+      }
+    }
+  }
+}
